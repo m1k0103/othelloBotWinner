@@ -457,7 +457,7 @@ print("Starting state: ")
 print_board(state)
 while not game_over(state):
     if has_valid_move(state, "W"):
-        move = random_move(state, "W")
+        move = my_move(state, "W")
         state = make_move(state, move[0], move[1], "W")
         print("White player makes move " + str(move_number) + ":")
         move_number += 1
